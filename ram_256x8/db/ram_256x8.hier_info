@@ -4167,14 +4167,14 @@ addr[7] => Mux4.IN0
 addr[7] => Mux5.IN0
 addr[7] => Mux6.IN0
 addr[7] => Mux7.IN0
-dio[0] <> dio[0]
-dio[1] <> dio[1]
-dio[2] <> dio[2]
-dio[3] <> dio[3]
-dio[4] <> dio[4]
-dio[5] <> dio[5]
-dio[6] <> dio[6]
-dio[7] <> dio[7]
+dio[0] <> dio[0]~0
+dio[1] <> dio[1]~1
+dio[2] <> dio[2]~2
+dio[3] <> dio[3]~3
+dio[4] <> dio[4]~4
+dio[5] <> dio[5]~5
+dio[6] <> dio[6]~6
+dio[7] <> dio[7]~7
 mem_wr_en => ram[255][7].ENA
 mem_wr_en => ram[255][6].ENA
 mem_wr_en => ram[255][5].ENA
@@ -6223,13 +6223,13 @@ mem_wr_en => ram[0][3].ENA
 mem_wr_en => ram[0][2].ENA
 mem_wr_en => ram[0][1].ENA
 mem_wr_en => ram[0][0].ENA
-mem_rd_en => dio[0].OE
-mem_rd_en => dio[1].OE
-mem_rd_en => dio[2].OE
-mem_rd_en => dio[3].OE
-mem_rd_en => dio[4].OE
-mem_rd_en => dio[5].OE
-mem_rd_en => dio[6].OE
-mem_rd_en => dio[7].OE
+mem_rd_en => dio[0]~0.OE
+mem_rd_en => dio[1]~1.OE
+mem_rd_en => dio[2]~2.OE
+mem_rd_en => dio[3]~3.OE
+mem_rd_en => dio[4]~4.OE
+mem_rd_en => dio[5]~5.OE
+mem_rd_en => dio[6]~6.OE
+mem_rd_en => dio[7]~7.OE
 
 
